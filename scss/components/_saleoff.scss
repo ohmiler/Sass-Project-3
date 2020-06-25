@@ -1,0 +1,71 @@
+.sale-off {
+    padding: 5rem;
+    display: flex;
+    height: 450px;
+
+    .sale-off-container {
+        display: flex;
+
+        .sale-off-left {
+            width: 500px;
+            padding-top: 6rem;
+
+            p {
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+            }
+
+            h1 {
+                font-weight: bold;
+                color: $primary-color;
+                font-size: 3rem;
+                letter-spacing: 10px;
+                text-transform: uppercase;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -1rem;
+                    width: 80px;
+                    height: 4px;
+                    background: $primary-color;
+                }
+            }
+        }
+
+        .sale-off-right {
+            width: 100%;
+            height: 400px;
+
+            display: flex;
+            text-align: center;
+            .sor-items {
+                width: 100%;
+                
+                img {
+                    width: 60%;
+                    height: 100%;
+                }
+
+                h3 {
+                    font-weight: bold;
+                    color: $primary-color;
+                    font-size: 1.5rem;
+                    margin-bottom: .5rem;
+                }
+                .price {
+                    color: $primary-color;
+                    text-decoration: line-through;
+                }
+                .price-off {
+                    margin-left: .5rem;
+                    font-weight: bold;
+                    color: #333;
+                }
+            }
+        }
+    }
+}

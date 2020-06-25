@@ -1,0 +1,125 @@
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+
+    .header-info {
+        flex-direction: column;
+
+        .header-info-left {
+            width: 100%;
+            margin: 0;
+            height: 350px;
+        }
+    }
+
+    .sale-off-container {
+        flex-direction: column;
+
+        .sale-off-left {
+            padding: 0 !important;
+        }
+        .sale-off-right {
+            margin-top: 3rem;
+            height: auto !important;
+        }
+    }
+
+    .coming-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 350px);
+
+        .coming-items:nth-child(1) {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+
+            .coming-info {
+                padding: 4rem;
+            }
+        }
+
+        .coming-items:nth-child(2) {
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+        }
+
+        .coming-items:nth-child(3) {
+            grid-column: 1 / 3;
+            grid-row: 3 / 4;
+        }
+
+        .coming-items:nth-child(4) {
+            grid-column: 1 / 3;
+            grid-row: 4 / 5;
+            // you can change place with - grid-row: 5 / 6;
+        }
+
+        .coming-items:nth-child(5) {
+            grid-column: 1 / 3;
+            grid-row: 5 / 6;
+            // you can change place with - grid-row: 4 / 5;
+        }
+    }
+
+    .latest {
+        padding: 2rem;
+        height: auto;
+        
+        .latest-container {
+            grid-template-rows: repeat(4, 350px);
+            grid-row-gap: 4rem;
+
+            .latest-items:nth-child(1) {
+                grid-column: 1 / 3;
+                grid-row: 1 / 2;
+            }
+
+            .latest-items:nth-child(2) {
+                grid-column: 3 / 5;
+                grid-row: 1 / 2;
+            }
+
+            .latest-items:nth-child(3) {
+                grid-column: 1 / 3;
+                grid-row: 2 / 3;
+            }
+
+            .latest-items:nth-child(4) {
+                grid-column: 3 / 5;
+                grid-row: 2 / 3;
+            }
+
+            .latest-items:nth-child(5) {
+                grid-column: 1 / 5;
+                grid-row: 3 / 5;
+            }
+        }
+    }
+
+    .blog {
+        padding: 1rem;
+
+        .blog-container {
+            flex-direction: column;
+
+            .blog-left {
+                width: 100%;
+                margin: 0;
+            }
+
+            .blog-right {
+                width: 100%;
+                margin: 0;
+
+                .br-wrapper {
+                    padding: 2rem;
+                }
+            }
+        }
+    }
+
+    .footer-container {
+        padding: 0 1rem !important;
+    }
+}
